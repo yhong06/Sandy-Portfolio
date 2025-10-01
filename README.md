@@ -1,2 +1,2 @@
-# Sandy-Portfolio
-a portfolio of my work
+# Hi I'm Sandy
+this is a portfolio of my work
