@@ -35,35 +35,30 @@ a {
 .site-shell {
   width: min(1120px, calc(100% - 32px));
   margin: 0 auto;
-  padding: 32px 0 56px;
+  padding: 40px 0 64px;
 }
 
 .profile-section {
-  min-height: 58vh;
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.75fr);
-  gap: 24px;
-  align-items: center;
-  padding: 42px 0 52px;
+  grid-template-columns: minmax(0, 1.1fr) minmax(320px, 0.9fr);
+  gap: 36px;
+  align-items: start;
+  padding: 28px 0 56px;
   border-bottom: 1px solid var(--line);
 }
 
 .personal-panel {
   display: grid;
-  grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
-  gap: 28px;
-  align-items: center;
+  gap: 22px;
 }
 
 .links-panel {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  display: grid;
+  align-content: start;
 }
 
 .headshot-frame {
-  aspect-ratio: 1;
+  aspect-ratio: 1.45;
   border-radius: 8px;
   overflow: hidden;
   background: #e8e1d7;
@@ -78,7 +73,7 @@ a {
 }
 
 .intro-copy {
-  max-width: 650px;
+  max-width: 560px;
 }
 
 .eyebrow {
@@ -99,9 +94,9 @@ dl {
 }
 
 h1 {
-  margin-bottom: 28px;
-  font-size: clamp(3.5rem, 9vw, 7.5rem);
-  line-height: 0.92;
+  margin-bottom: 18px;
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+  line-height: 0.98;
   letter-spacing: 0;
 }
 
@@ -164,12 +159,12 @@ dd {
 
 .link-grid {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 14px;
 }
 
 .work-link {
-  min-height: 100px;
+  min-height: 116px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -190,7 +185,7 @@ dd {
 }
 
 .work-link strong {
-  font-size: 1.35rem;
+  font-size: 1.22rem;
 }
 
 .project-grid {
@@ -207,8 +202,6 @@ dd {
 
 .project-card.featured {
   grid-column: 1 / -1;
-  display: grid;
-  grid-template-columns: minmax(0, 1.3fr) minmax(280px, 0.7fr);
 }
 
 .project-image {
@@ -218,7 +211,7 @@ dd {
 }
 
 .featured .project-image {
-  min-height: 430px;
+  min-height: 360px;
 }
 
 .project-copy {
